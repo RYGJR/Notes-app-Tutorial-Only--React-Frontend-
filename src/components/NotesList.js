@@ -22,7 +22,7 @@ const NotesList = () => {
             <h4>List of Notes</h4>
            <div className="notes-list mt-4">
             {
-                    notes && notes.map(note => (
+                    notes > 0 ? notes.map(note => (
                         <div key={note.id} className="notes-preview mt-3">
                            <Link to='#'>
                             <h5 className="primary-color text-capitalize">{note.title}</h5>
